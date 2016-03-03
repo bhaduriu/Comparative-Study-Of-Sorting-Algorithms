@@ -1,0 +1,2 @@
+# Comparative-Study-Of-Sorting-Algorithms
+Comparative Study of general sort Algorithms viz., Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort. Analysis on why Quick Sort is fastest among all the Sorting Algorithms, difference between Merge Sort and Quick Sort in spite of both having O(nlogn) complexity for Average Cases. The project was coded on C and it returned the execution time required for each sort on giving real life  10,000 random inputs. Graphically it also showed the difference among them by GNU plot.
