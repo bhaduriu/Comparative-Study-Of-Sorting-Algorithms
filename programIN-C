@@ -3,7 +3,7 @@
     #include<stdlib.h>
     #include<time.h>
     clock_t begin,end;
-    double bubblesort(int a[], int n)
+    double bubblesort(int* a, int n)
     {
         int i,j,tmp;
         for(i=0;i<n-1;i++)
@@ -19,7 +19,7 @@
             }
         }
     }
-    double selSort(int d[],int size)
+    double selSort(int* d,int size)
     {
         int i,j,min,t;
         for(i=0;i<size-1;i++)
@@ -35,7 +35,7 @@
              d[min]=t;
         }
     }
-    double InsertionSort(int a[],int n)
+    double InsertionSort(int* a,int n)
     {
         int i,j,t;
         for(i=1;i<n;i++)
@@ -48,7 +48,7 @@
             a[j]=t;
         }
     }
-    double part(int arr[],int min,int max)
+    double part(int* arr,int min,int max)
     {
      int mid;
      if(min<max)
@@ -59,7 +59,7 @@
        merge(arr,min,mid,max);
      }
     }
-    void merge(int arr[],int min,int mid,int max)
+    void merge(int* arr,int min,int mid,int max)
     {
       int tmp[20000];
       int i,j,k,m;
@@ -97,7 +97,7 @@
       for(k=min; k<=max; k++)
          arr[k]=tmp[k];
     }
-    void swap (int a[], int left, int right)
+    void swap (int* a, int left, int right)
     {
      int temp;
      temp=a[left];
